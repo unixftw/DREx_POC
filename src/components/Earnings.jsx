@@ -6,27 +6,27 @@ function Earnings() {
   const earningsData = [
     {
       progress: 45,
-      amount: 3125,
+      amount: 31.25,
     },
     {
       progress: 55,
-      amount: 2731,
+      amount: 17.31,
     },
     {
       progress: 65,
-      amount: 1315,
+      amount: 13.15,
     },
     {
       progress: 100,
-      amount: 1012,
+      amount: 42.42,
     },
   ];
   return (
     <Section>
       <div className="title-container">
         <div className="title">
-          <h4>Earnings</h4>
-          <h1>$7,850</h1>
+          <h4>Your Earnings</h4>
+          <h1>$7,85</h1>
         </div>
         <span className="more">Show More</span>
       </div>
@@ -35,7 +35,7 @@ function Earnings() {
           return (
             <div className="earning" key={amount}>
               <div className="data">
-                <h5>{progress === 100 ? "FUNDS CLEARED" : "CLEARNING"}</h5>
+                <h5>{progress === 100 ? "FUNDS CLEARED" : "DEPOSITED BY SMEs"}</h5>
                 <h5 className="amount">$ {amount}</h5>
               </div>
               <progress
@@ -63,6 +63,7 @@ const Section = styled.section`
       h1 {
         font-size: 2rem;
         letter-spacing: 0.2rem;
+        color: #00FA9A;
       }
     }
     .more {
@@ -96,7 +97,7 @@ const Section = styled.section`
         }
         &::-webkit-progress-value {
           border-radius: 1rem;
-          background-color: orange;
+          background-color: aquamarine;
         }
       }
       .cleared {

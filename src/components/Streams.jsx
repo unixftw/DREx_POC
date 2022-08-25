@@ -3,10 +3,6 @@ import styled from "styled-components";
 import { applyCardStyles } from "components/ReusableStyles";
 import { AreaChart, Area, Tooltip, ResponsiveContainer } from "recharts";
 
-import logo1 from "assets/logo1.png";
-import logo2 from "assets/logo2.png";
-import logo3 from "assets/logo3.png";
-import logo4 from "assets/logo4.png";
 
 function Streams() {
   const data = [
@@ -63,10 +59,10 @@ function Streams() {
       data: 5800,
     },
     {
-      data: 6000,
+      data: 7000,
     },
     {
-      data: 6300,
+      data: 7300,
     },
     {
       data: 6580,
@@ -161,46 +157,22 @@ function Streams() {
       data: 6000,
     },
     {
-      data: 8000,
+      data: 6100,
     },
   ];
   const sliderData = [
     {
-      image: logo1,
-      serviceName: "Sound Cloud",
-    },
-    {
-      image: logo2,
-      serviceName: "Spotify",
-    },
-    {
-      image: logo3,
-      serviceName: "Youtube Music",
-    },
-    {
-      image: logo4,
-      serviceName: "Apple Music",
+  
     },
   ];
   return (
     <Section>
       <div className="title-container">
         <div className="title">
-          <h4>Streams</h4>
-          <h1>450,210</h1>
+          <h4>Energy production</h4>
+          <h1>450,210⚡kWh</h1>
         </div>
-        <div className="slider">
-          <div className="services">
-            {sliderData.map(({ image, serviceName }) => {
-              return (
-                <div className="service" key={serviceName}>
-                  <img src={image} alt={serviceName} />
-                  <h6>{serviceName}</h6>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+       
       </div>
       <div className="chart">
         <ResponsiveContainer width="100%" height="100%">

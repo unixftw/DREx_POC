@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500&display=swap");
 
 :root {
-  --primary-color: #9ccc3d;
-  --background-color: rgba(3, 3, 27, 0.7);
-  --dark-background-color: rgb(2, 2, 15);
+  --primary-color: #1065fa;
+  --background-color: rgba(0, 0, 0, 0.7);
+  --dark-background-color: rgb(2, 2, 17);
   --font: "Exo", sans-serif;
 }
 
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background-image: url("assets/background.jpg");
+  background-image: url("assets/background7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: var(--font);

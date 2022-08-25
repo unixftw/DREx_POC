@@ -1,29 +1,29 @@
 import React from "react";
 import styled from "styled-components";
-import { RiNeteaseCloudMusicLine } from "react-icons/ri";
-import { HiOutlineMusicNote } from "react-icons/hi";
+import logo from '../assets/drexwhite.png';
+import { FaSolarPanel } from "react-icons/fa";
 import { BiGroup, BiBell } from "react-icons/bi";
 import { AiOutlineDollarCircle } from "react-icons/ai";
-import { SiAnalogue } from "react-icons/si";
+import { AiFillThunderbolt } from "react-icons/ai";
 import { FiHelpCircle } from "react-icons/fi";
 function Sidebar() {
   return (
     <Aside id="sidebar">
       <div className="brand">
-        <RiNeteaseCloudMusicLine />
+      <img src={logo} width="100" height="50" alt="logo"/>
       </div>
       <ul className="links">
         <li className="selected">
-          <SiAnalogue />
+          <AiFillThunderbolt />
         </li>
         <li>
-          <HiOutlineMusicNote />
-        </li>
-        <li>
-          <BiBell />
+          <FaSolarPanel />
         </li>
         <li>
           <AiOutlineDollarCircle />
+        </li>
+        <li>
+          <BiBell/>
         </li>
         <li>
           <BiGroup />

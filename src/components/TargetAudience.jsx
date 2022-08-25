@@ -31,22 +31,22 @@ function TargetAudience() {
     <Section>
       <div className="title-container">
         <div className="title">
-          <h4>Target Audience</h4>
+          <h4>CO<span>2</span> sequestered</h4>
           <BsThreeDots />
         </div>
       </div>
       <div className="chart">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart width={500} height={300} data={data}>
-            <Tooltip cursor={{ fill: "#3d741d7a" }} />
+            <Tooltip cursor={{ fill: "#CCFB5D" }} />
             <defs>
               <linearGradient id="colorview" x1="0" y1="0" x2="0" y2="1">
                 <stop
                   offset="40%"
                   stopColor="var(--primary-color)"
-                  stopOpacity={0.8}
+                  stopOpacity={1.5}
                 />
-                <stop offset="80%" stopColor="#000000ff" stopOpacity={0.3} />
+                <stop offset="80%" stopColor="#77DD77" stopOpacity={0.9} />
               </linearGradient>
             </defs>
             <Bar
